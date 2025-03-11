@@ -9,6 +9,9 @@ app = create_app()
 # the Flask application routes ('/', '/breakfast', etc.)
 freezer = Freezer(app)
 
+@freezer.register_generator
+def static_files():
+    yield 'static', {'filename': 'js/script.js'}
 
 if __name__ == '__main__':
     # Generate the static files using Frozen-Flask
