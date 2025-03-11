@@ -1,121 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Flask Recipe App</title>
-
-        <!-- Local CSS file for styling the application-->
-        <link rel="stylesheet" href="/static/css/base_style.css">
-        <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
-
-        <!-- Additional Styling -->
-        
-        
-    </head>
-
-    <body>
-        <header>
-            <h1>Kennedy Family Recipes</h1>
-            <nav>
-                <ul>
-                    <li class="nav__item"><a href="/" class="nav__link">Recipes</a></li>
-                    <li class="nav__item"><a href="/blog/" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="content">
-            <!-- child template -->
-            
-<div class="recipe-container">
-
-    <div class="card">
-        <a href="/breakfast/">
-            <img
-              src="/static/img/breakfast.jpg"
-              alt="Breakfast"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Breakfast</h2>
-                <p>11 recipes</p>
-            </div>
-        </a>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оптимизация 2D конструкций</title>
+    <link rel="stylesheet" href="/static/css/base_style.css">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Оптимизация 2D конструкций</h1>
+        <form id="optimization-form">
+            <label for="nelx">Количество элементов по X:</label>
+            <input type="number" id="nelx" name="nelx" value="100" required>
+            <label for="nely">Количество элементов по Y:</label>
+            <input type="number" id="nely" name="nely" value="50" required>
+            <label for="vol_frac">Доля объема материала:</label>
+            <input type="number" id="vol_frac" name="vol_frac" value="0.6" step="0.1" required>
+            <label for="penal">Параметр штрафа:</label>
+            <input type="number" id="penal" name="penal" value="3" required>
+            <label for="rmin">Радиус фильтрации:</label>
+            <input type="number" id="rmin" name="rmin" value="3" required>
+            <label for="er">Скорость изменения:</label>
+            <input type="number" id="er" name="er" value="0.02" step="0.01" required>
+            <button type="submit">Оптимизировать</button>
+        </form>
+        <div id="result">
+            <h2>Процесс оптимизации</h2>
+            <canvas id="topology-canvas"></canvas>
+            <p id="iteration-info"></p>
+        </div>
     </div>
-
-    <div class="card">
-        <a href="/dinner/">
-            <img
-              src="/static/img/dinner.jpg"
-              alt="Dinner"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Dinner</h2>
-                <p>8 recipes</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="card">
-        <a href="/side_dishes/">
-            <img
-              src="/static/img/side_dishes.jpg"
-              alt="Side Dishes"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Side Dishes</h2>
-                <p>4 recipes</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="card">
-        <a href="/dessert/">
-            <img
-              src="/static/img/dessert.jpg"
-              alt="Dessert"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Dessert</h2>
-                <p>6 recipes</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="card">
-        <a href="/drink/">
-            <img
-              src="/static/img/drink.jpg"
-              alt="Drink"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Drinks</h2>
-                <p>3 recipes</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="card">
-        <a href="/baked_goods/">
-            <img
-              src="/static/img/baked_goods.jpg"
-              alt="Baked Goods"
-              class="card__image" />
-            <div class="card__body">
-                <h2>Baked Goods</h2>
-                <p>9 recipes</p>
-            </div>
-        </a>
-    </div>
-
-</div>
-
-        </main>
-
-        <footer>
-            <p>Created by <a href="https://www.patricksoftwareblog.com/">Patrick Kennedy</a> (2023)</p>
-        </footer>
-    </body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
 </html>
