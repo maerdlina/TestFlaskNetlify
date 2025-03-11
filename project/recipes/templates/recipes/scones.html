@@ -1,0 +1,50 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Scones</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>Scones feel like a special treat for breakfast!  These scones have a slightly crunchy exterior and a delicious, buttery interior.</p>
+<p>These scones don't contain any filling, like raisins or other dried fruit, which is how I prefer my scones.  I prefer to add jam or butter to my scones.</p>
+<p>This recipe is adapted from Paul Hollywood's (judge on the Great British Baking Show) YouTube video: <a href="https://youtu.be/-Fet_XHruSQ">Paul Hollywood's Easy Bakes - Scones</a></p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/scones.jpg') }}" alt="Scones" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>After mixing the flour and butter, add the remaining dry ingredients and mix well with a whisk.  This step makes sure that the baking powder is well distributed.</p>
+<p>The bake time of 15 minutes has always worked well for me.  The tops of the scones may seem slightly light in color, but I find that they darken a bit more after taking the scones out of the oven.  Plus, any additional time will really dry out the scones and not give them as nice of a texture when biting into them.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+<li>500 grams (plus 1/2 cup) of Bread Flour</li>
+<li>50 grams of Dairy-Free Butter (recommendation: <a href="https://www.earthbalancenatural.com/spreads/soy-free-buttery-spread">Earth Balance - Soy Free Butter Spread</a>)</li>
+<li>80 grams of Granulated Sugar</li>
+<li>1/2 teaspoon of Sea Salt (fine)</li>
+<li>5 teaspoons of Baking Powder</li>
+<li>2 large Eggs</li>
+<li>250 milliliters (ml) of Almond Milk (unsweetened)</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+<li>Preheat oven to 400°F.</li>
+<li>In a large bowl, add the flour and butter.  Using your hands, squish the butter into the flour to break up all the butter into the flour.  This step should take a few minutes to get all the butter and flour mixed into a sand-like consistency.</li>
+<li>Add the remaining dry ingredients (sugar, salt, baking powder) to the bowl and mix thoroughly with a whisk.</li>
+<li>Add the wet ingredients (eggs, almond milk) and mix the dough together in the bowl with a wooden spoon.</li>
+<li>Add approximately 1/2 cup of bread flour to a clean surface (countertop or cutting board).  Pour the dough out and fold the dough onto itself about 10 times to form a smooth dough ball.  Make sure to not knead the dough (a stretching motion) as that will make the dough tough when it cooks.</li>
+<li>Flatten the dough out with your hands or a rolling pin to a 1" thickness.</li>
+<li>Using a round biscuit cutter (approximately 3" in diameter), cut out the scones and place each one onto a baking sheet with a <a href="https://www.bedbathandbeyond.com/store/product/silpat-reg-silpain-reg-silicone-bread-baking-mat/1044058814">SilPain</a> or parchment paper.  This dough should make 8-12 scones.</li>
+<li>Bake for 15 minutes.</li>
+<li>Let the scones cool for 5-10 minutes before eating plain or topping with jam or butter.  Enjoy!</li>
+</ol>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Oatmeal</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>Oatmeal is my favorite breakfast to have during the work week, as it's quick to make and it really fills me up to get through the morning.</p>
+<p>I like to use quick-cooking oats, as it only takes a few minutes to cook the oatmeal.</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/oatmeal.jpg') }}"  alt="Oatmeal" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>My favorite oatmeal to use is <a href="https://mccanns.com/product/mccanns-quick-cooking-rolled-irish-oats/">McCann's Quick Cooking Rolled Irish Oats</a>.</p>
+<p>If using frozen fruit, add extra liquid when cooking the oatmeal to help quickly defrost the frozen fruit with the very hot (extra) water.</p>
+<p>If adding peanuts, make sure to use unsalted peanuts, as the salted version does work well in oatmeal.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+    <li>0.5 Cups of Quick-Cooking Oatmeal (Recommendation: <a href="https://mccanns.com/product/mccanns-quick-cooking-rolled-irish-oats/">McCann's Quick Cooking Rolled Irish Oats</a>)</li>
+    <li>1.25 Cups of Water</li>
+    <li>0.5 Cups of Frozen Fruit (Blueberries work best!</li>
+    <li>1.5 Tablespoons of Unsalted Peanuts</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+    <li>Prepare the oatmeal according to the packaging direction, but add extra water if including frozen fruit later</li>
+    <li>Add the frozen fruit to a bowl and pour in the cooked oatmeal; mix thoroughly to get the frozen fruit covered to defrost.</li>
+    <li>Top with any additional toppings, such as peanuts.</li>
+</ol>
+{% endblock %}

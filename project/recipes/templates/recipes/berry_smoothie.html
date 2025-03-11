@@ -1,0 +1,50 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Berry Smoothie</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>A delicious smoothie made with frozen berries and acai!</p>
+<p>I love fresh berries, especially blueberries, and this smoothie is an explosion of berry flavors.</p>
+<p>This smoothie uses frozen fruit, as well as a fresh banana to make it smooth and creamy.</p>
+<p>This recipe makes about 4 medium-sized smoothies.</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/berry_smoothie.jpg') }}"  alt="Berry Smoothie" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>Feel free to substitute your favorite frozen berries into this recipe.</p>
+<p>It can be tough to get the correct consistency in the blender, but add water if the mixture is too thick and isn't mixing correctly.</p>
+<p>If you want to make smoothie bowls, add less water to the mixture to get a thicker consistency and then top with granola and fresh fruit.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+    <li>1 Packet of Frozen Unsweetened Acai</li>
+    <li>1 Cup of Frozen Blueberries</li>
+    <li>1.5 Cups of Frozen Strawberries</li>
+    <li>1 Cup of Fresh Spinach (loosely packed - about one handful)</li>
+    <li>1 Fresh Banana</li>
+    <li>1.5 Cups of Water</li>
+    <li>1/2 Cup of Grape Juice</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+    <li>Using a blender, start by adding the water</li>
+    <li>Add the fresh spinach, acai, frozen blueberries, and frozen strawberries</li>
+    <li>Add the banana to the blender by breaking it up into pieces (3 or 4)</li>
+    <li>Add the grape juice</li>
+    <li>Blend on a medium speed until the mixture is smooth and everything is incorporated together</li>
+    <li>Add more water to make the consistency more liquid</li>
+    <li>Pour the mixture into cups and enjoy!</li>
+</ol>
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="recipe-container">
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='pancakes') }}">
+            <img
+              src="{{ url_for('static', filename='img/pancakes.jpg') }}"
+              alt="Pancakes"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Pancakes</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='honey_bran_muffins') }}">
+            <img
+              src="{{ url_for('static', filename='img/honey_bran_muffins.jpg') }}"
+              alt="Honey Bran Muffins"
+              class="card__image" />
+            <div class="card__body">
+                <h2 class="recipe-title-long">Honey Bran Muffins</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='acai_bowl') }}">
+            <img
+              src="{{ url_for('static', filename='img/acai_bowl.jpg') }}"
+              alt="Acai Bowl"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Acai Bowl</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='breakfast_scramble') }}">
+            <img
+              src="{{ url_for('static', filename='img/breakfast_scramble.jpg') }}"
+              alt="Breakfast Scramble"
+              class="card__image" />
+            <div class="card__body">
+                <h2 class="recipe-title-long">Breakfast Scramble</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='pumpkin_donuts') }}">
+            <img
+              src="{{ url_for('static', filename='img/pumpkin_donuts.jpg') }}"
+              alt="Pumpkin Donuts"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Pumpkin Donuts</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='waffles') }}">
+            <img
+              src="{{ url_for('static', filename='img/waffles.jpg') }}"
+              alt="Waffles"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Waffles</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='omelette') }}">
+            <img
+              src="{{ url_for('static', filename='img/omelette.jpg') }}"
+              alt="Omelette"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Omelette</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='chocolate_donuts') }}">
+            <img
+              src="{{ url_for('static', filename='img/chocolate_donuts.jpg') }}"
+              alt="Chocolate Donuts"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Chocolate Donuts</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='oatmeal') }}">
+            <img
+              src="{{ url_for('static', filename='img/oatmeal.jpg') }}"
+              alt="Oatmeal"
+              class="card__image" />
+            <div class="card__body">
+                <h2>Oatmeal</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='morning_glory_muffins') }}">
+            <img
+              src="{{ url_for('static', filename='img/morning_glory_muffins.jpg') }}"
+              alt="Morning Glory Muffins"
+              class="card__image" />
+            <div class="card__body">
+                <h2 class="recipe-title-long">Morning Glory Muffins</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="{{ url_for('recipes.breakfast_recipe', recipe_name='blueberry_smoothie_bowl') }}">
+            <img
+              src="{{ url_for('static', filename='img/blueberry_smoothie_bowl.jpg') }}"
+              alt="Blueberry Smoothie Bowl"
+              class="card__image" />
+            <div class="card__body">
+                <h2 class="recipe-title-extra-long">Blueberry Smoothie Bowl</h2>
+                <p class="recipe-badge dairy-free-badge">Dairy-Free</p>
+                <p class="recipe-badge soy-free-badge">Soy-Free</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+{% endblock %}

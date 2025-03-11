@@ -1,0 +1,54 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Shredded Chicken</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>Shredded chicken is the base for so many of my favorite recipes!</p>
+<p>Shredded chicken is the key ingredient in <a href="/dinner/taquitos/">taquitos</a></p>
+<p>I like to make a big batch of the taco seasoning as it keeps for a few months in an air-tight container.</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/shredded_chicken.jpg') }}" alt="Shredded Chicken" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>Shredding the chicken is best done on a cutting board using a serrated knife (like a small bread knife) with a fork.</p>
+<p>After the chicken is shredded, let it sit in the salsa sauce to absorb the delicious salsa/taco seasoning mixture.  This step also makes the chicken come out really moist.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<h4>Taco Seasoning:</h4>
+<ul>
+<li>6 teaspoons of Chili Powder</li>
+<li>4 teaspoons of Ground Cumin</li>
+<li>4 teaspoons of Oregano (Dried)</li>
+<li>4 teaspoons of Cocoa Powder</li>
+<li>2 teaspoons of Onion Powder</li>
+<li>2 teaspoons of Black Pepper</li>
+<li>0.5 teaspoons of Ground Coriander</li>
+</ul>
+<h4>Other ingredients:</h4>
+<ul>
+<li>1.5 pounds of Boneless, Skinless Chicken Breast</li>
+<li>1 jar of Salsa</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+<li>In a large pot or Dutch oven, add just enough water to cover the bottom (this helps prevent the chicken from sticking).</li>
+<li>Add the chicken breasts, cover with 2 tablespoons of the taco seasoning, and pour the jarred salsa over the chicken.</li>
+<li>Cover the pot and cook on medium heat for 20 minutes.</li>
+<li>Turn over the chicken and cook for 20 more minutes (covered).</li>
+<li>With the chicken fully cooked, take out 1 chicken breast at a time and cut/shred the chicken on a cutting board.  Add all the cut chicken pieces back into the pot to mix with the sauce.</li>
+<li>After all the chicken is shredded, mix the chicken thoroughly into the salsa sauce, turn off the heat, and cover the pot.</li>
+<li>Let sit for 5 minutes to have the chicken absorb the salsa sauce and serve while hot!</li>
+</ol>
+{% endblock %}

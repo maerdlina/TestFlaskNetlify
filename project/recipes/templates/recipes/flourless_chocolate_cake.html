@@ -1,0 +1,48 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Flourless Chocolate Cake</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>This delicious cake is an incredible dessert, plus it's gluten-free!  This cake is fudgy and chocolate-y, as it is similar in texture to a brownie.</p>
+<p>The dusting of powdered sugar on the top of the cake is both decorative and adds a nice sweetness.</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/flourless_chocolate_cake.jpg') }}" alt="Flourless Chocolate Cake" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>Be patient and take your time with the double-boiler when melting the chocolate and the butter.  The melting process should take 5-10 minutes.</p>
+<p>Use a sift for adding the cocoa powder into the batter and also for dusting the cake at the end with powdered sugar.  The whisk really helps to break up any pieces and results in a smooth, uniform texture/finish.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+<li>4 ounces of Bittersweet Chocolate (not unsweetened)</li>
+<li>1 stick of Dairy-Free Butter (recommendation: <a href="https://www.earthbalancenatural.com/spreads/soy-free-buttery-spread">Earth Balance - Soy Free Butter Spread</a>)</li>
+<li>0.75 cups of Granulated Sugar</li>
+<li>3 large Eggs</li>
+<li>0.5 cups of Unsweetened Cocoa Powder</li>
+<li>Powdered Sugar (for sprinkling cake after baking)</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+<li>Preheat oven to 375°F and butter an 9-inch round baking pan. Line bottom with a round of parchment paper and butter paper.</li>
+<li>In a double boiler or metal mixing bowl set over a saucepan of barely simmering water, slowly melt the chocolate with the butter, stirring, until smooth (about 5-10 minutes).</li>
+<li>Remove top of double boiler or bowl from heat and whisk in the sugar into the chocolate mixture.</li>
+<li>Add Eggs and whisk well (to prevent the eggs from cooking).</li>
+<li>Sift cocoa powder into the chocolate mixture and whisk until just combined.</li>
+<li>Pour batter into the prepared pan and bake for 20  minutes, or until the top has formed a thin crust.</li>
+<li>Cool the cake in pan on a rack 5 minutes.</li>
+<li>Run a butter knife around the side of the cake and then invert onto a serving plate.</li>
+<li>Dust cake with powdered sugar.</li>
+</ol>
+{% endblock %}

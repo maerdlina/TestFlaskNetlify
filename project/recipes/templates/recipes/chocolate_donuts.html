@@ -1,0 +1,67 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Chocolate Donuts</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>These chocolate cake donuts are baked in the over, not deep-fried, so they have texture similar to cupcakes.</p>
+<p>The chocolate frosting on these donuts is optional, but I think of these donuts as double-chocolate donuts with the frosting on them!</p>
+<p>This recipe is adapted from this excellent donut recipe from Matt in the Kitchen: <a href="https://www.inthekitchenwithmatt.com/chocolate-cake-donuts">Chocolate Cake Donuts</a></p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/chocolate_donuts.jpg') }}"  alt="Chocolate Donuts" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>This recipe requires a <a href="https://www.nordicware.com/products/donut-pan/">donut pan</a> to be able to bake the donuts in the oven.</p>
+<p>Depending on how much batter you put in the donut pan, the bake time can vary from 8-11 minutes.  It's a good idea to stick a toothpick in a donut and check that no batter sticks to the toothpick to know that the donuts are done cooking.</p>
+<p>It can be tricky to get the cooked donuts out of the donut pan, so use a small spatula to gently pull out the donuts when transferring to a wire rack to cool.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<p>Donut Batter:</p>
+<ul>
+    <li>1 Cup of All-Purpose Flour</li>
+    <li>1/4 Cup of Cocoa Powder</li>
+    <li>1/3 Cup of Granulated Sugar</li>
+    <li>1 Teaspoon of Baking Powder</li>
+    <li>1/2 Teaspoon of Baking Soda</li>
+    <li>1 Teaspoon of Salt</li>
+    <li>3 Tablespoon of melted Dairy-Free Butter (recommendation: <a href="https://www.earthbalancenatural.com/spreads/soy-free-buttery-spread">Earth Balance - Soy Free Butter Spread</a>)</li>
+    <li>1 Teaspoon of Vanilla Extract</li>
+    <li>1 Cup of Regular (Unsweetened) Almond Milk</li>
+    <li>1 Egg</li>
+    <li>Canola Oil (in a spray bottle)</li>
+</ul>
+
+<p>Chocolate Frosting:</p>
+<ul>
+    <li>0.5 Cups of Powdered Sugar</li>
+    <li>1.5 Tablespoons of Cocoa Powder</li>
+    <li>1.5 Tablespoons of Water (plus slightly more if the frosting is too thick)</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+    <li>Pre-heat the over to 350 degrees (Fahrenheit).</li>
+    <li>In a large bowl, combine the dry ingredients (flour, cocoa powder, sugar, baking powder, baking soda, and salt).  Use a sift to break up the lumps in the flour and the cocoa powder.</li>
+    <li>Use a whisk to mix the dry ingredients.</li>
+    <li>Add in the wet ingredients (almond milk, vanilla extract, egg, and melted butter) one by one, making sure to whisk the batter as the wet ingredients are added.</li>
+    <li>Pour the batter into a large Ziploc bag (1-gallon works well) and use a spatula to scrape all the batter into the bag.</li>
+    <li>Cut a small hole (1/2 inch) on one side of the Ziploc bag for the batter to come out.</li>
+    <li>Using a spray bottle/mister, spray a small amount of Canola oil into each donut circle in the donut pan.</li>
+    <li>From the Ziploc bag, pour the donut batter into each donut circle in the pan and fill about 3/4 full.</li>
+    <li>Bake for 8-11 minutes, depending on how full each donut circle is in the pan.  I've found that 9 minutes is usually the perfect amount of time.  Poke a toothpick into the thickest donut and check that the toothpick comes out clean to see that the donuts are cooked all the way through.</li>
+    <li>Let the donuts cool for a few minutes and then transfer them to a wire rack to cool.</li>
+    <li>Make the frosting by combining the powdered sugar, cocoa powder, and water in a mixing bowl and mixing vigorously with a whist (the frosting should be very thick!).</li>
+    <li>Dunk each donut into the frosting to coat the top side of the donut with frosting; let cool for 10 minutes for the frosting to harden on the donuts.</li>
+    <li>Enjoy the super chocolate donuts!</li>
+</ol>
+{% endblock %}

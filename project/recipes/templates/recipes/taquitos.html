@@ -1,0 +1,47 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Taquitos</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>Taquitos are rolled tacos that are usually deep-fried, but they come out amazing in an air fryer!</p>
+<p>The outside of the taquitos (corn tortilla) gets really crunchy in the air fryer, but the inside (chicken and cheese) is flavorful and creamy.</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/taquitos.jpg') }}" alt="Taquitos" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>Use toothpicks (plain wood) to hold the rolled tacos in place while cooking in the air fryer; otherwise, the tortillas unroll while cooking.</p>
+<p>I've found that the filling in the rolled tacos should not be too much, as the filling can easily spill out in the air fryer if too full.</p>
+<p>When rolling the tacos, pull the tortilla tightly.  This approach makes for a tight taco that cooks perfectly.</p>
+<p>A <a href="https://www.target.com/p/imusa-8-5-plastic-tortilla-arepa-warmer/-/A-50860234#lnk=sametab">tortilla warmer </a> is great for keeping corn tortillas warm, but it also makes them more pliable for rolling. </p>
+<p>`</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+<li><a href="/dinner/shredded_chicken/">Shredded Chicken</a></li>
+<li>Sharp Cheddar Cheese (sliced into small, thin pieces)</li>
+<li>Corn Tortillas (Recommendation: <a href="https://www.missionfoods.com/products/white-corn-tortillas/">White Corn Tortillas - Mission</a>)</li>
+<li>Sides (Shredded Lettuce, Salsa, Guacamole)</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+<li>Get all the ingredients (shredded chicken, corn tortillas, and sliced cheddar cheese) prepared (<a href="https://en.wikipedia.org/wiki/Mise_en_place">Mise en place</a>!)</li>
+<li>In a frying pan, heat up the corn tortillas and place each into the tortilla warmer.</li>
+<li>After heating up all the tortillas, place one corn tortilla on a cutting board, place a small amount of shredded chicken (2 small spoonfuls) in the center of the tortilla and top with two thin slices of cheddar cheese.</li>
+<li>Tightly roll the tortilla and use two toothpicks to hold the rolled tortilla together.</li>
+<li>Repeat to make more taquitos (that can fit into the air fryer.)</li>
+<li>Cook the taquitos for 10 minutes at 350 degrees (F) in the air fryer.</li>
+<li>Serve with your favorite sides (guacamole, salsa, shredded lettuce)!</li>
+</ol>
+{% endblock %}

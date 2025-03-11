@@ -1,0 +1,48 @@
+{% extends "recipe.html" %}
+
+{% block recipe_title %}
+<h1>Red Lentil Chili</h1>
+{% endblock %}
+
+{% block recipe_description %}
+<h2>Description</h2>
+<p>Red Lentil Chili is a vegan chili that is absolutely delicious and such a comforting meal!</p>
+<p>I enjoy eating Red Lentil Chili over <a href="/side_dishes/jasmine_rice/">Jasmine Rice</a> and adding peas or corn as a topping.</p>
+<p>This recipe is inspired by the excellent <a href="https://highcarbhannah.co/recipes/red-lentil-chili/">Red Lentil Chili recipe</a> from <a href="https://highcarbhannah.co/">High Carb Hannah</a>; I highly recommend checking out her YouTube videos for excellent recipe ideas and vegan-eating inspiration!</p>
+{% endblock %}
+
+{% block recipe_image %}
+<img src="{{ url_for('static', filename='img/red_lentil_chili.jpg') }}" alt="Red Lentil Chili" />
+{% endblock %}
+
+{% block recipe_tips %}
+<h2>Tips</h2>
+<p>I've made this recipe without the red bell pepper (by accident!) and the red bell pepper really adds a nice sweetness to the dish.</p>
+<p>The red lentils need to cook for at least 20 minutes, but I like to cook the dish for 30 minutes to really have the flavors mix together.</p>
+{% endblock %}
+
+{% block recipe_ingredients %}
+<h2>List of Ingredients</h2>
+<ul>
+<li>1 large Red Onion</li>
+<li>1 large Red Bell Pepper</li>
+<li>1 cup of Red Lentils</li>
+<li>2 cans (15oz) of Fire-Roasted Diced Tomatoes (Recommendation: <a href="https://thrivemarket.com/p/thrive-market-organic-fire-roasted-tomatoes">Fire-Roasted Diced Tomatoes from Thrive Market</a>)</li>
+<li>2 cups of Water</li>
+<li>1 Tablespoon of Chili Powder</li>
+<li>1 Tablespoon of Smoked Paprika</li>
+<li>2 Tablespoons of Better Than Bouillon (Recommendation: <a href="https://thrivemarket.com/p/better-than-bouillon-organic-vegetable-base-bouillon">Better Than Bouillon (Organic Vegetable Base) from Thrive Market</a>)</li>
+</ul>
+{% endblock %}
+
+{% block recipe_steps %}
+<h2>Recipe Steps</h2>
+<ol>
+<li>Finely dice up the onion and the red bell pepper into small pieces, so they are easy to sauté.</li>
+<li>Add the onions to a large, heavy-bottomed pan or Ditch oven with 2 Tablespoons of water and sauté for 5 minutes on medium heat.</li>
+<li>Add the diced bell pepper to the pot and sauté for an additional 3 minutes.</li>
+<li>Add all the remaining ingredients into the pot and mix well.</li>
+<li>Cover the pot and let simmer on medium-low heat for 30 minutes (to fully cook the red lentils).</li>
+<li>Serve over Jasmine Rice!</li>
+</ol>
+{% endblock %}
