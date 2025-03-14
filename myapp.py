@@ -3,7 +3,7 @@ import numpy as np
 from beso import Cantilever, CvxFEA, BESO2D
 
 app = Flask(__name__)
-# socketio = SocketIO(app)
+socketio = SocketIO(app)
 
 @app.route("/")
 def index():
