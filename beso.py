@@ -13,7 +13,7 @@ from scipy.ndimage import binary_closing, binary_opening, label
 from scipy.ndimage import zoom
 from scipy.ndimage import gaussian_filter
 
-matplotlib.use('TkAgg')
+# matplotlib.use('TkAgg')
 class Load:
     def __init__(self, nelx, nely, E, nu):
         self.nelx = nelx
