@@ -1,7 +1,7 @@
 from flask_frozen import Freezer
-from myapp import app
+from myapp import socketio
 
-freezer = Freezer(app)
+freezer = Freezer(socketio)
 
 if __name__ == '__main__':
     freezer.freeze()
