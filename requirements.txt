@@ -9,5 +9,4 @@ flask-socketio
 numpy
 matplotlib
 scipy
-tkinter
 cvxopt
