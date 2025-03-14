@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import numpy as np
+from flask_socketio import SocketIO
 from beso import Cantilever, CvxFEA, BESO2D
 
 app = Flask(__name__)
