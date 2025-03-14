@@ -5,9 +5,8 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.0
 Werkzeug==0.14.1
-flask-socketio==5.5.1
-numpy==2.2.3
-matplotlib==3.10.1
-scipy==1.15.2
-tkinter
+flask-socketio
+numpy
+matplotlib
+scipy
 cvxopt
