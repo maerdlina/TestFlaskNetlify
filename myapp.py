@@ -39,5 +39,5 @@ def handle_optimization(data):
     optimization.topology(vol_frac, er, rmin, penal, Plotting=False, Saving=False, callback=send_iteration_data)
 
 if __name__ == '__main__':
-    # app.run(debug=True)
+    app.run(debug=True)
     socketio.run(app, debug=True)
